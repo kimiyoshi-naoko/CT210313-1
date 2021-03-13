@@ -1,0 +1,555 @@
+@charset "utf-8";
+
+/* リセットcss */
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+/*自身のコード　*/
+
+.header {
+  height: 60px;
+  background: #000;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #ffffff;
+  font-weight: bold;
+  margin-left: 20px;
+  line-height: 60px;
+}
+
+.header nav ul {
+  display: flex;
+  margin-right: 20px;
+}
+
+.header nav a {
+  color: #ffffff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.top {
+  background: url(../img/eyecatch.jpg) no-repeat;
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top h1 {
+  color: white;
+  padding-top: 350px;
+  font-size: 40px;
+  padding-left: 100px;
+  font-style: italic;
+}
+
+.top-news {
+  display: flex;
+  align-items: flex-end;
+}
+
+.top-news-item {
+  background-color: #ffffff;
+}
+
+.top-news-item2 {
+  background-color: black;
+}
+
+.top-news-item h4 {
+  color: dimgrey;
+  font-size: 6px;
+  padding-top: 4px;
+}
+
+.top-news-item h5 {
+  font-size: 3px;
+  padding: 3px 250px 10px 4px;
+  font-weight: solid;
+  color: dimgrey;
+}
+
+.top-news-item2 h4 {
+  color: white;
+  line-height: 40px;
+  padding: 0 50px;
+  font-size: 2px;
+}
+
+.company {
+  background: black;
+  height: 400px;
+  position: relative;
+}
+
+.company-wrap {
+  color: white;
+  width: 660px;
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  z-index: 1;
+}
+
+.company-wrap h2 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.company-wrap p {
+  font-size: 11px;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+
+.company-img img {
+  width: 490px;
+  position: absolute;
+  top: 30%;
+  right: 50px;
+}
+
+.company-wrap a {
+  background: #ffffff;
+  color: black;
+  text-decoration: none;
+  font-size: 10px;
+  padding: 8px 20px;
+}
+
+.service {
+  height: 1100px;
+  background-color: rgb(224, 220, 220);
+  margin-top: 130px;
+  position: relative;
+}
+
+.service h2 {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.service-top {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 200px;
+}
+
+.img1 img {
+  width: 600px;
+}
+
+.service-detail {
+  position: relative;
+  top: 70px;
+  left: 100px;
+  background-color: #ffffff;
+  height: 200px;
+  font-size: 13px;
+  padding: 50px 50px 0 50px;
+  width: 400px;
+}
+
+.service-detail h3,
+.service-detail2 h3 {
+  font-size: 12px;
+  margin-bottom: 15px;
+  color: rgb(100, 97, 97);
+}
+
+.service-detail p,
+.service-detail2 p {
+  font-size: 11px;
+  margin-bottom: 15px;
+  line-height: 15px;
+  color: rgb(100, 97, 97);
+}
+
+.aright {
+  text-align: right;
+}
+.aright a {
+  text-decoration: none;
+  color: rgb(100, 97, 97);
+  border: solid 1px rgb(100, 97, 97);
+  padding: 5px 10px;
+}
+
+.service-bottom {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 200px;
+}
+
+.service-detail2 {
+  position: relative;
+  top: 70px;
+  right: 100px;
+  background-color: #ffffff;
+  height: 200px;
+  font-size: 13px;
+  padding: 50px 50px 0 50px;
+  width: 400px;
+}
+
+.img2 img {
+  width: 600px;
+}
+
+.aleft {
+  text-align: right;
+}
+.aleft a {
+  text-decoration: none;
+  color: rgb(100, 97, 97);
+  border: solid 1px rgb(100, 97, 97);
+  padding: 5px 10px;
+}
+
+.info {
+  height: 300px;
+}
+
+.info-menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 70px 0;
+}
+
+.info-c {
+  background: url(../img/company.jpeg) no-repeat;
+  background-size: cover;
+  width: 48%;
+  height: 130px;
+  position: relative;
+}
+
+.info-r {
+  background: url(../img/recruit.jpg) no-repeat;
+  background-size: cover;
+  width: 48%;
+  height: 130px;
+  position: relative;
+}
+
+.info-c h4,
+.info-c p,
+.info-r h4,
+.info-r p {
+  color: #ffffff;
+}
+
+.info-c h4,
+.info-r h4 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+.info-c p,
+.info-r p {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10px;
+}
+
+.faq {
+  position: relative;
+}
+
+.faq-wrap {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  width: 65%;
+  height: 50px;
+}
+
+.faq p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 10px;
+}
+
+.faq h2 {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+}
+
+.faq a {
+  text-decoration: none;
+}
+
+.contact {
+  height: 320px;
+  background: url(../img/contact-bg.jpg) no-repeat;
+  background-size: cover;
+}
+
+.contact h3,
+.contact p,
+.contact h4,
+.contact h5 {
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact h3 {
+  padding: 70px 0 8px 0;
+  font-size: 20px;
+}
+
+.contact p {
+  font-size: 12px;
+  padding-bottom: 15px;
+}
+
+.contact h4 {
+  font-weight: lighter;
+  padding-bottom: 20px;
+}
+
+.contact h5 {
+  font-weight: lighter;
+  font-size: 10px;
+  padding-bottom: 20px;
+}
+
+.contact-form {
+  text-align: center;
+}
+
+.contact-form p {
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  border: #ffffff solid 1px;
+  padding: 8px 20px;
+  font-size: 10px;
+}
+
+.footer {
+  background-color: black;
+  height: 50px;
+}
+
+.logo-f,
+.copyright {
+  color: white;
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer nav ul {
+  display: flex;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+.footer nav li {
+  padding-right: 15px;
+}
+.footer nav a {
+  text-decoration: none;
+  font-size: 10px;
+  color: white;
+}
+
+.logo-f {
+  margin-left: 20px;
+  margin-top: 15px;
+  fong-size: 13px;
+  padding-top: 5px;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 5px;
+}

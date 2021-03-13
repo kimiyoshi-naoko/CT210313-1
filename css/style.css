@@ -1,0 +1,445 @@
+@charset "utf-8";
+
+/* リセットcss */
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+.header {
+  height: 70px;
+  background: #000;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 35px;
+  color: #f2f2f2;
+  line-height: 70px;
+}
+
+.header-nav ul {
+  display: flex;
+}
+
+.header-nav li {
+  margin-right: 35px;
+  font-size: 16px;
+}
+
+.header-nav a {
+  color: #f2f2f2;
+}
+
+@media screen and (max-width: 768px) {
+  /* この中にcssを記述 */
+  #hamburger {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 100;
+    top: 15px;
+    right: 20px;
+    transition: 0.4s;
+  }
+
+  #hamburger span {
+    position: absolute;
+    left: 2px;
+    display: block;
+    width: 35px;
+    height: 2px;
+    background-color: #fff;
+    transition: 0.8s;
+  }
+
+  #hamburger span:nth-of-type(1) {
+    top: 10px; /* ハンバーガーメニューの1本目の棒 */
+  }
+
+  #hamburger span:nth-of-type(2) {
+    top: 20px; /* ハンバーガーメニューの2本目の棒 */
+  }
+
+  #hamburger span:nth-of-type(3) {
+    top: 30px; /* ハンバーガーメニューの3本目の棒 */
+  }
+
+  .header-nav {
+    display: none; /* デスクトップのナビを消す */
+  }
+
+  .guide-wrap {
+    flex-wrap: wrap;
+  }
+
+  .guide-left,
+  .guide-right {
+    width: 80%;
+  }
+
+  .service-wrap {
+    flex-wrap: wrap;
+  }
+
+  .service-cat {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.mainview {
+  background: url(../img/bg1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 380px;
+  position: relative;
+}
+
+.mainview h1 {
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  font-style: italic;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.mainguide {
+  margin: 0 auto 50px;
+}
+.guide-wrap {
+  flex-wrap: wrap;
+}
+
+.guide-left,
+.-right {
+  width: 80%;
+}
+
+.mainguide h3 {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+.guide-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.guide-left img {
+  width: 100%;
+  display: block;
+}
+
+.guide-right,
+.guide-left {
+  width: 45%;
+}
+
+.guide-right ol {
+  list-style-position: inside;
+}
+
+.guide-right p {
+  margin: 20px 0;
+}
+
+.main-service {
+  background: url(../img/bg3.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+
+.main-service h2 {
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 30px 0;
+}
+
+.service-wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.service-cat {
+  width: 28%;
+  background-color: rgba(51, 51, 51, 0.5);
+  padding: 20px 35px 30px;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+.service-cat img {
+  height: auto;
+  margin: 0 auto 10px;
+  width: 100px;
+}
+
+.service-cat h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.information h2 {
+  font-size: 30px;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.info {
+  border-collapse: collapse;
+  margin: 0 auto 30px;
+  width: 70%;
+}
+
+.info th,
+.info td {
+  text-align: left;
+}
+
+.info td {
+  font-weight: solid;
+}
+
+.information {
+  padding: 40px 0 70px 0;
+}
+
+.info tr {
+  border-bottom: 1px solid #333333;
+}
+
+.info td {
+  padding: 10px 0;
+}
+
+.contact {
+  background: rgb(241, 241, 241);
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 30px 0;
+}
+
+.form {
+  margin: 0 auto;
+  width: 70%;
+}
+
+input,
+textarea {
+  margin-bottom: 20px;
+  width: 60%;
+  border: 1px solid #999;
+  box-sizing: border-box;
+}
+label {
+  display: inline-block;
+  width: 30%;
+}
+textarea {
+  height: 100px;
+  vertical-align: top;
+}
+
+.button {
+  margin-bottom: 30px;
+  background-color: #000;
+  color: #ffffff;
+  padding: 10px 30px;
+}
+
+.button-submit {
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  font-size: 10px;
+  margin: 20px 0;
+  color: #999;
+}
